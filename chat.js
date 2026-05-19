@@ -119,7 +119,7 @@ function showChatInterface() {
 function saveApiKey() {
   const input = document.getElementById('apiKeyInput');
   const key = (input.value || '').trim();
-  if (!key.startsWith('sk-ant')) {
+if (!key.startsWith('sk-or')) {
     input.style.borderColor = 'var(--red)';
     input.placeholder = '格式不对，应该以 sk-ant 开头';
     setTimeout(() => { input.style.borderColor = ''; input.placeholder = 'sk-ant-api03-...'; }, 2500);
