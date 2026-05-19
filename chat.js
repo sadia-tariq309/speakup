@@ -122,7 +122,7 @@ function saveApiKey() {
 if (!key.startsWith('sk-or')) {
     input.style.borderColor = 'var(--red)';
     input.placeholder = '格式不对，应该以 sk-ant 开头';
-    setTimeout(() => { input.style.borderColor = ''; input.placeholder = 'sk-ant-api03-...'; }, 2500);
+    setTimeout(() => { input.style.borderColor = ''; input.placeholder = 'sk-or-v1-...'; }, 2500);
     return;
   }
   chatState.apiKey = key;
